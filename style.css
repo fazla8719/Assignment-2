@@ -1,0 +1,57 @@
+/* common styles  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header starts  */
+header{
+    padding: 100px;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.top-title{
+    font-size: 30px;
+}
+.nav-right{
+    display: flex;
+}
+.nav-right ul{
+    display: flex;
+}
+.nav-right ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.fas{
+    font-size: 20px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 50px;
+}
+.left-banner p{
+    margin: 20px 0;
+}
+.right-banner{
+    flex: 1;
+}
