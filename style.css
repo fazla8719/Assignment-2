@@ -20,14 +20,12 @@ nav{
     justify-content: space-between;
 }
 .fa-bars{
-   display: none;
-    
+   display: none;  
 }
 .top-title{
     font-size: 30px;
    animation: title 1s linear 1s 1 forwards ;
-   visibility: hidden;
-   
+   visibility: hidden;  
 }
 @keyframes title {
     0%{
@@ -47,7 +45,6 @@ nav{
     display: flex;
     animation: ul 1s linear 1.5s 1 forwards ;
     visibility: hidden;
-
 }
 @keyframes ul {
     0%{
@@ -75,9 +72,7 @@ nav{
 .banner{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    
-   
+    margin-top: 100px;  
 }
 .left-banner{
     display: flex;
@@ -347,7 +342,8 @@ footer{
 /* mobile version */
 @media screen and (max-width:480px) {
     header{
-        padding: 50px;
+        padding: 30px;
+        /* padding-left: 30px; */
     }
     .fa-bars{
         display: block;
@@ -379,21 +375,15 @@ footer{
             visibility: visible;
         }
     }    
-        
-  
-
     .nav-right ul{
         display: none;
     }
     .banner{
         display: block;
-        margin-top: 40px;
-        
+        margin-top: 40px;    
     }
     .left-banner{
        margin-bottom: 20px;
-      
-
     }
     .left-banner p{
         width: 400px;
