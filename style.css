@@ -25,7 +25,9 @@ nav{
 }
 .top-title{
     font-size: 30px;
+   
 }
+
 .nav-right{
     display: flex;
 }
@@ -89,9 +91,7 @@ nav{
 
 /* collection starts */
 .collection-sec{
-    padding: 150px;
-
-   
+    padding: 0 150px 50px 150px;
 }
 .collections{
     
@@ -151,6 +151,58 @@ nav{
     color:#E02C6D ;
 }
 
+/* myself starts  */
+.myself{
+    /* border: 1px solid black; */
+}
+hr{
+    width: 95%;
+    margin: 0 auto;
+   border: 1px solid #E02C6D;
+}
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sign-in p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#sign-in-btn{
+    padding: 10px 130px;
+    margin-bottom: 5px;
+
+}
+.sign-in small{
+    font-size: 12px;
+}
+.sign-in small a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+.sign-in small a:hover{
+    color: #E02C6D ;
+}
+/* back starts  */
+.back{
+    margin-top: 50px;
+}
+.back a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(54, 50, 50);
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.back a:hover{
+    background-color:rgba(54, 50, 50, 0.747) ;
+}
 /* footer starts  */
 footer{
     background-color: black;
