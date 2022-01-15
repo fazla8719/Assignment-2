@@ -13,10 +13,15 @@ body{
 header{
     padding: 100px;
     height: 100vh;
+
 }
 nav{
     display: flex;
     justify-content: space-between;
+}
+.fa-bars{
+   display: none;
+    
 }
 .top-title{
     font-size: 30px;
@@ -55,7 +60,11 @@ nav{
 }
 .banner-title{
     font-size: 50px;
+    width: 560px;
     
+}
+.left-banner p{
+    width: 500px;
 }
 .left-banner p{
     margin: 20px 0;
@@ -141,6 +150,8 @@ nav{
 #more-arrow{
     color:#E02C6D ;
 }
+
+/* footer starts  */
 footer{
     background-color: black;
     color: white;
@@ -164,4 +175,56 @@ footer{
 }
 .fab{
     margin: 15px;
+}
+
+/* media query starts  */
+@media screen and (max-width:480px) {
+    header{
+        padding: 50px;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .top-title{
+        font-size:25px;
+        margin-left: 0px;
+    }
+    .nav-right ul{
+        display: none;
+    }
+    .banner{
+        display: block;
+        margin-top: 40px;
+        
+    }
+    .left-banner{
+       margin-bottom: 20px;
+
+    }
+    .left-banner p{
+        width: 400px;
+    }
+    .left-banner span{
+        margin-left: 90px;
+    }
+    .banner-title{
+        font-size: 30px;
+        margin-left: 0;
+        width:348px ;
+    }
+    .btn{
+        padding: 10px 50px;
+        margin-left: 70px;
+    }
+    .collection-sec{
+       padding: 0;
+       margin-bottom: 30px;
+    }
+    .collections{
+        display: block;
+        
+    }
+    .collection{
+        margin-bottom: 15px;
+    }
 }
