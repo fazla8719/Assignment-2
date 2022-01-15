@@ -77,3 +77,91 @@ nav{
     font-size: 15px;
     margin-left: 5px;
 }
+
+/* collection starts */
+.collection-sec{
+    padding: 200px;
+
+   
+}
+.collections{
+    
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 30px;
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+  margin-bottom: 50px;
+  
+} 
+.collection-title{
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+.collection{
+    padding: 10px;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    
+}
+.product-img img{
+    width: 100%;
+}
+.product-title,.product-img,.cost{
+    margin-bottom: 10px;
+}
+.collections .fas{
+    color: orange;
+    font-size: 10px;
+
+}
+.review{
+    margin-bottom: 5px;
+}
+.review span{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.shifting{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+.more{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.more a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: bold;
+}
+#more-arrow{
+    color:#E02C6D ;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding: 30px 0;
+
+}
+.footer-title{
+    margin-left: 32px;
+    margin-bottom: 5px;
+}
+.footer-copy{
+    font-weight: lighter;
+}
+.footer-rights{
+    font-weight: lighter;
+    color: rgb(173, 165, 165);
+    margin-left: 65px;
+}
+.fab{
+    margin: 15px;
+}
