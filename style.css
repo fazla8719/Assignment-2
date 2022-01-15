@@ -12,7 +12,7 @@ body{
 /* header starts  */
 header{
     padding: 100px;
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 nav{
@@ -89,7 +89,7 @@ nav{
 
 /* collection starts */
 .collection-sec{
-    padding: 200px;
+    padding: 150px;
 
    
 }
@@ -178,6 +178,52 @@ footer{
 }
 
 /* media query starts  */
+/* tablet version  */
+@media screen and (min-width:481px) and (max-width:780px){
+    header{
+        padding: 100px;
+        padding-bottom: 0;
+    }
+     .nav-right ul {
+         display: none;
+     }
+     .fa-bars{
+         display: block;
+     }
+     .banner{
+         width: 630px;
+         margin-top: 80px;
+
+     }
+     .left-banner{
+         width: 50%;
+     }
+     .banner-title{
+         font-size: 30px;
+         width: 346px;
+     }
+     .left-banner p{
+        width: 300px;
+    }
+     .right-banner{
+         width: 50%;
+     }
+     .right-banner img{
+         width: 80%;
+         margin-left: 50px;
+     }
+     .collection-sec{
+         padding: 100px;
+     }
+     .collection-title{
+         margin-bottom: 40px;
+     }
+     .collections{
+         grid-template-columns: repeat(2,1fr);
+     }
+}
+
+/* mobile version */
 @media screen and (max-width:480px) {
     header{
         padding: 50px;
@@ -199,6 +245,7 @@ footer{
     }
     .left-banner{
        margin-bottom: 20px;
+      
 
     }
     .left-banner p{
