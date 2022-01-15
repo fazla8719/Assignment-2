@@ -25,7 +25,19 @@ nav{
 }
 .top-title{
     font-size: 30px;
+   animation: title 1s linear 1s 1 forwards ;
+   visibility: hidden;
    
+}
+@keyframes title {
+    0%{
+        transform: translateX(-500px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
 }
 
 .nav-right{
@@ -33,6 +45,19 @@ nav{
 }
 .nav-right ul{
     display: flex;
+    animation: ul 1s linear 1.5s 1 forwards ;
+    visibility: hidden;
+
+}
+@keyframes ul {
+    0%{
+        transform: translateY(-500px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
 }
 .nav-right ul li{
     list-style-type: none;
@@ -67,14 +92,26 @@ nav{
 }
 .left-banner p{
     width: 500px;
-}
-.left-banner p{
     margin: 20px 0;
-   
 }
+
+
 .right-banner img{
    width: 100%;
+   visibility: hidden;
+   animation: img 1s linear 3s 1 forwards;
 }
+@keyframes img {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
 .btn{
     background-color: #E02C6D;
     color: white;
@@ -152,13 +189,11 @@ nav{
 }
 
 /* myself starts  */
-.myself{
-    /* border: 1px solid black; */
-}
+
 hr{
     width: 95%;
     margin: 0 auto;
-   border: 1px solid #E02C6D;
+   border: .5px solid #E02C6D;
 }
 .sign-in{
     display: flex;
@@ -236,12 +271,43 @@ footer{
         padding: 100px;
         padding-bottom: 0;
     }
+    .top-title{
+        font-size: 30px;
+       animation: title .5s linear 1s 1 forwards ;
+       visibility: hidden;
+       
+    }
+    @keyframes title {
+        0%{
+            transform: translateY(-500px);
+            visibility: visible;
+        }
+        100%{
+            transform: translateY(0px);
+            visibility: visible;
+        }
+    }
+    
      .nav-right ul {
          display: none;
      }
      .fa-bars{
          display: block;
+         animation: bars 0.5s 0.5s 1 forwards ;
+         visibility: hidden;
+
      }
+     @keyframes bars {
+        0%{
+            transform: translateX(-500px);
+            visibility: visible;
+        }
+        100%{
+            transform: translateX(0px);
+            visibility: visible;
+        }
+    }
+     
      .banner{
          width: 630px;
          margin-top: 80px;
@@ -263,7 +329,10 @@ footer{
      .right-banner img{
          width: 80%;
          margin-left: 50px;
+         animation: img 1s linear 2s 1 forwards;
+        
      }
+     
      .collection-sec{
          padding: 100px;
      }
@@ -282,11 +351,37 @@ footer{
     }
     .fa-bars{
         display: block;
+        animation: bars 0.5s 1s 1 forwards ;
+         visibility: hidden;
+    }
+    @keyframes bars {
+        0%{
+            transform: translateX(-500px);
+            visibility: visible;
+        }
+        100%{
+            transform: translateX(0px);
+            visibility: visible;
+        }
     }
     .top-title{
         font-size:25px;
         margin-left: 0px;
-    }
+        animation: title 1s linear 1.2s 1 forwards ;
+      }    
+      @keyframes title {
+        0%{
+            transform: translateX(500px);
+            visibility: visible;
+        }
+        100%{
+            transform: translateX(0px);
+            visibility: visible;
+        }
+    }    
+        
+  
+
     .nav-right ul{
         display: none;
     }
@@ -315,6 +410,9 @@ footer{
         padding: 10px 50px;
         margin-left: 70px;
     }
+    .right-banner img{
+        animation: img 1s linear 2s 1 forwards;
+    }
     .collection-sec{
        padding: 0;
        margin-bottom: 30px;
@@ -325,5 +423,8 @@ footer{
     }
     .collection{
         margin-bottom: 15px;
+    }
+    #sign-in-btn{
+        margin-left: 0px;
     }
 }
